@@ -1,0 +1,9 @@
+data/
+data_download/
+segmentation_data.zip
+*.pth
+*.bin
+saliency_map_outputs/
+coarse_outputs/
+sam_outputs/
+__pycache__/

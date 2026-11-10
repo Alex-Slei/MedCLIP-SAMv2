@@ -1,0 +1,31 @@
+BASELINE: MedCLIP-SAMv2 zero-shot, breast tumor ultrasound
+Run date: 2026-11-10
+
+Command: bash zeroshot_scripts/zeroshot_breast_tumors.sh data/breast_tumors
+Test set: UDIAT, 113 images (data/breast_tumors/test_images)
+Prompts: authors' per-image prompts (saliency_maps/text_prompts/breast_tumors_testing.json)
+         = subtype-specific sentences (P3 style in the paper, includes benign/malignant)
+Settings: fine-tuned BiomedCLIP, vlayer 9, vbeta 1.0, vvar 1.0, seed 12,
+          kmeans postprocessing, SAM ViT-H, box prompts
+
+RESULTS
+Our run:          DSC 82.27%   NSD 86.56%
+Paper (Table I):  DSC 78.42 +/- 9.32   NSD 82.69 +/- 9.50  (arXiv 2409.19483v1)
+
+Hardware/software: RTX 4060 Laptop GPU, WSL2 Ubuntu 22.04, Python 3.10,
+                   torch 2.1.2+cu118, transformers 4.35.2
+Runtime: about 7 minutes total
+
+MODELS USED
+BiomedCLIP: authors' fine-tuned checkpoint (DHN-NCE loss), 748 MB
+            file: saliency_maps/model/pytorch_model.bin
+            source: README "Our fine-tuned model can be downloaded here"
+                    (Google Drive ID 1jjnZabUlc9_gpcP0d2nz_GNS-EGX0lq5)
+            processor/tokenizer: Hugging Face chuhac/BiomedCLIP-vit-bert-hf
+SAM:        ViT-H (largest version), 2.4 GB
+            file: segment-anything/sam_checkpoints/sam_vit_h_4b8939.pth
+            source: https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth
+
+FILE CHECKSUMS (to confirm the exact same files)
+f59b08d2ad3861a8a3a6b44037fba5fa5da11989eacda0eb98732af960a3697d  saliency_maps/model/pytorch_model.bin
+a7bf3b02f3ebf1267aba913ff637d9a2d5c33d3173bb679e46d9f338c26f262e  segment-anything/sam_checkpoints/sam_vit_h_4b8939.pth
