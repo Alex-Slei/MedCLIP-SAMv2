@@ -1,0 +1,82 @@
+prompt_id,batch,target_term,prompt,pilot
+A01,A,tumor,breast tumor,true
+A02,A,tumour,breast tumour,false
+A03,A,lesion,breast lesion,true
+A04,A,mass,breast mass,true
+A05,A,lump,breast lump,true
+A06,A,growth,breast growth,false
+A07,A,nodule,breast nodule,false
+A08,A,neoplasm,breast neoplasm,false
+A09,A,abnormality,breast abnormality,false
+B01,B,tumor,tumor in the breast,false
+B02,B,tumour,tumour in the breast,false
+B03,B,lesion,lesion in the breast,false
+B04,B,mass,mass in the breast,false
+B05,B,lump,lump in the breast,false
+B06,B,growth,growth in the breast,false
+B07,B,nodule,nodule in the breast,false
+B08,B,neoplasm,neoplasm in the breast,false
+B09,B,abnormality,abnormality in the breast,false
+C01,C,tumor,breast tumor in an image,false
+C02,C,tumour,breast tumour in an image,false
+C03,C,lesion,breast lesion in an image,false
+C04,C,mass,breast mass in an image,false
+C05,C,lump,breast lump in an image,false
+C06,C,growth,breast growth in an image,false
+C07,C,nodule,breast nodule in an image,false
+C08,C,neoplasm,breast neoplasm in an image,false
+C09,C,abnormality,breast abnormality in an image,false
+D01,D,tumor,breast tumor in an ultrasound image,false
+D02,D,tumour,breast tumour in an ultrasound image,false
+D03,D,lesion,breast lesion in an ultrasound image,false
+D04,D,mass,breast mass in an ultrasound image,false
+D05,D,lump,breast lump in an ultrasound image,false
+D06,D,growth,breast growth in an ultrasound image,false
+D07,D,nodule,breast nodule in an ultrasound image,false
+D08,D,neoplasm,breast neoplasm in an ultrasound image,false
+D09,D,abnormality,breast abnormality in an ultrasound image,false
+E01,E,tumor,An image showing a tumor in the breast.,true
+E02,E,tumour,An image showing a tumour in the breast.,false
+E03,E,lesion,An image showing a lesion in the breast.,true
+E04,E,mass,An image showing a mass in the breast.,true
+E05,E,lump,An image showing a lump in the breast.,true
+E06,E,growth,An image showing a growth in the breast.,false
+E07,E,nodule,An image showing a nodule in the breast.,false
+E08,E,neoplasm,An image showing a neoplasm in the breast.,false
+E09,E,abnormality,An image showing an abnormality in the breast.,false
+F01,F,tumor,An ultrasound image showing a tumor in the breast.,true
+F02,F,tumour,An ultrasound image showing a tumour in the breast.,false
+F03,F,lesion,An ultrasound image showing a lesion in the breast.,true
+F04,F,mass,An ultrasound image showing a mass in the breast.,true
+F05,F,lump,An ultrasound image showing a lump in the breast.,true
+F06,F,growth,An ultrasound image showing a growth in the breast.,false
+F07,F,nodule,An ultrasound image showing a nodule in the breast.,false
+F08,F,neoplasm,An ultrasound image showing a neoplasm in the breast.,false
+F09,F,abnormality,An ultrasound image showing an abnormality in the breast.,false
+G01,G,tumor,An ultrasound image showing a breast tumor.,false
+G02,G,tumour,An ultrasound image showing a breast tumour.,false
+G03,G,lesion,An ultrasound image showing a breast lesion.,false
+G04,G,mass,An ultrasound image showing a breast mass.,false
+G05,G,lump,An ultrasound image showing a breast lump.,false
+G06,G,growth,An ultrasound image showing a breast growth.,false
+G07,G,nodule,An ultrasound image showing a breast nodule.,false
+G08,G,neoplasm,An ultrasound image showing a breast neoplasm.,false
+G09,G,abnormality,An ultrasound image showing a breast abnormality.,false
+H01,H,tumor,A sonographic image showing a tumor in the breast.,false
+H02,H,tumour,A sonographic image showing a tumour in the breast.,false
+H03,H,lesion,A sonographic image showing a lesion in the breast.,false
+H04,H,mass,A sonographic image showing a mass in the breast.,false
+H05,H,lump,A sonographic image showing a lump in the breast.,false
+H06,H,growth,A sonographic image showing a growth in the breast.,false
+H07,H,nodule,A sonographic image showing a nodule in the breast.,false
+H08,H,neoplasm,A sonographic image showing a neoplasm in the breast.,false
+H09,H,abnormality,A sonographic image showing an abnormality in the breast.,false
+I01,I,tumor,A tumor in the breast is visible on ultrasound.,false
+I02,I,tumour,A tumour in the breast is visible on ultrasound.,false
+I03,I,lesion,A lesion in the breast is visible on ultrasound.,false
+I04,I,mass,A mass in the breast is visible on ultrasound.,false
+I05,I,lump,A lump in the breast is visible on ultrasound.,false
+I06,I,growth,A growth in the breast is visible on ultrasound.,false
+I07,I,nodule,A nodule in the breast is visible on ultrasound.,false
+I08,I,neoplasm,A neoplasm in the breast is visible on ultrasound.,false
+I09,I,abnormality,An abnormality in the breast is visible on ultrasound.,false
